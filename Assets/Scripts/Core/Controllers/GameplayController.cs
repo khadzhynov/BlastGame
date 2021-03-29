@@ -31,10 +31,7 @@ namespace BlastGame.Core.Controllers
             PowerUpsModel powerUpsModel,
             ExplosionController explosionController,
             PopupManager popupManager,
-            LevelProgressController levelProgressController,
-            StonesPool stonesPool,
-            PowerUpsPool powerUpsPool
-            )
+            LevelProgressController levelProgressController)
         {
             _gameplayModel = gameplayModel;
             _stonesController = stonesController;
