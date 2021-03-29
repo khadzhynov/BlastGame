@@ -46,12 +46,20 @@ namespace BlastGame.Core.Models
             var victims = new List<FieldItemView>();
             if (_radius > 0)
             {
-                victims.AddRange(items.Where(x => Vector3.Distance(x.transform.position, position) <= _radius));
+                var radialVictims = items.Where(x => Vector3.Distance(x.transform.position, position) <= _radius);
+                if (radialVictims != null)
+                {
+                    victims.AddRange(radialVictims);
+                }
             }
 
             foreach (var rect in _rects)
             {
-                victims.AddRange(items.Where(x => rect.IsInside(x.transform.position, position)));
+                var rectVictims = items.Where(x => rect.IsInside(x.transform.position, position));
+                if (rectVictims != null)
+                {
+                    victims.AddRange(rectVictims);
+                }
             }
 
             return victims;
