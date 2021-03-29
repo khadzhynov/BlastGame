@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38964684793be1e419c00cbc786a23a1, type: 3}
+  m_Name: Spawn Model
+  m_EditorClassIdentifier: 
+  _spawnDelay: 0.025
+  _spawnMaxDistance: 0.5
+  _spawnAmountForMaxDistance: 30
+  _stonePrefab: {fileID: 2842617196826898874, guid: 494de33c78ed8c74996d6f5718a7e18d,
+    type: 3}
+  _powerUpPrefabs:
+  - {fileID: 380929917858748993, guid: 333b8fcb583200b41a9e1326df50af7c, type: 3}
+  - {fileID: 4606835276007067283, guid: ab80376211cf0c640a5191d4becaa614, type: 3}
+  - {fileID: 4396451686754007543, guid: 81c0b505519d7d34a92af862236ee423, type: 3}
